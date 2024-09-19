@@ -1,0 +1,28 @@
+
+# Kayitlarimizda bulunan SegmentKey, OrderId bilgileri XbagAvailabilityPnr servisinde ilgili alanlara girilir
+* "doXbagAvailabilityPnr" requestine "replaceSegmentKey" yerine hashmapdeki "segmentRef1" "replaceOrderId" yerine "orderId" ve "replacePassengerID" yerine "passengerId1" degerlerini ekle
+
+# doXbagAvailabilityPnr servisinden donen sorgudan sececegimiz bagajın OfferItemıd(1. bacak icin) degeri kaydedilir
+* xml "Envelope.Body.ServiceListRS.ALaCarteOffer.ALaCarteOfferItem[0].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemIdfirst_bagaj" keyiyle hashmape ekle
+
+# OrderCreate servisinden donen SegmentKey(2.bacak icin) ve OrderId alanlari doXbagAvailability servisindeki ilgili alana girilir
+* "doXbagAvailabilityPnr" requestine "replaceSegmentKey" yerine hashmapdeki "segmentRef2" "replaceOrderId" yerine "orderId" ve "replacePassengerID" yerine "passengerId1" degerlerini ekle
+
+# OrderCreate servisinden donen SegmentKey(3.bacak icin) ve OrderId alanlari doXbagAvailability servisindeki ilgili alana girilir
+* "doXbagAvailabilityPnr" requestine "replaceSegmentKey" yerine hashmapdeki "segmentRef3" "replaceOrderId" yerine "orderId" ve "replacePassengerID" yerine "passengerId1" degerlerini ekle
+//* "doXbagAvailabilityPnr" requestine "replaceSegmentKey" yerine hashmapdeki "segmentRef3" ve "replaceOrderId" yerine "orderId" degerlerini ekle
+
+# OrderCreate servisinden donen SegmentKey(4.bacak icin) ve OrderId alanlari doXbagAvailability servisindeki ilgili alana girilir
+//* "doXbagAvailabilityPnr" requestine "replaceSegmentKey" yerine hashmapdeki "segmentRef4" ve "replaceOrderId" yerine "orderId" degerlerini ekle
+* "doXbagAvailabilityPnr" requestine "replaceSegmentKey" yerine hashmapdeki "segmentRef4" "replaceOrderId" yerine "orderId" ve "replacePassengerID" yerine "passengerId1" degerlerini ekle
+
+# doXbagAvailabilityPnr servisinden donen sorgudan sececegimiz bagajın OfferItemıd(2. bacak icin) degeri kaydedilir
+* xml "Envelope.Body.ServiceListRS.ALaCarteOffer.ALaCarteOfferItem[0].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemIdsecond_bagaj" keyiyle hashmape ekle
+
+# doXbagAvailabilityPnr servisinden donen sorgudan sececegimiz bagajın OfferItemıd(3. bacak icin) degeri kaydedilir
+* xml "Envelope.Body.ServiceListRS.ALaCarteOffer.ALaCarteOfferItem[0].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemIdthird_bagaj" keyiyle hashmape ekle
+
+# doXbagAvailabilityPnr servisinden donen sorgudan sececegimiz bagajın OfferItemıd(4. bacak icin) degeri kaydedilir
+* xml "Envelope.Body.ServiceListRS.ALaCarteOffer.ALaCarteOfferItem[0].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemIdfourth_bagaj" keyiyle hashmape ekle
+
+

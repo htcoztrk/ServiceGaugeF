@@ -1,0 +1,59 @@
+Created by testinium on 19.09.2022
+
+# Headers alanina gecerli kullanicinin Username ve Password bilgileri girilir
+* "Username" key "T621OC48" value degerini headera ekle
+* "Password" key "Sa123456" value degerini headera ekle
+
+
+ # <text> sorgusu icin AgentUserID ile Username in ayni mi oldugu kontrol edilir
+* <text> xmlinde "Envelope.Body.AirShoppingRQ.Party.Sender.TravelAgencySender.AgentUser.AgentUserID.text()" xpathinindeki elementi headerdaki "Username" keyli deger ile karsilastir
+
+# AirShopping sorgusundan donen ilk ucusun OfferID ve ResponseID alani kaydedilir
+//* xml "Envelope.Body.AirShoppingRS.ShoppingResponseID.ResponseID.text()" xpathinindeki elementi "responseId" keyiyle hashmape ekle
+* xml "Envelope.Body.AirShoppingRS.ShoppingResponseID.ResponseID.text()" xpathinindeki elementi "responseId" keyiyle hashmape ekle
+* Paketi "ECO" olan ilk gidis ucusunun Offer ID sini al
+
+# AirShopping sorgusundan donen ilk ucusun OfferID ve ResponseID alani kaydedilir ADV
+* xml "Envelope.Body.AirShoppingRS.ShoppingResponseID.ResponseID.text()" xpathinindeki elementi "responseId" keyiyle hashmape ekle
+* Paketi "ADV" olan ilk gidis ucusunun Offer ID sini al
+//* xml "Envelope.Body.AirShoppingRS.OffersGroup.AirlineOffers.Offer[0].@OfferID.text()" xpathinindeki elementi "offerId" keyiyle hashmape ekle
+# AirShopping sorgusundan donen ilk ucusun OfferID ve ResponseID alani kaydedilir FLEX
+* xml "Envelope.Body.AirShoppingRS.ShoppingResponseID.ResponseID.text()" xpathinindeki elementi "responseId" keyiyle hashmape ekle
+* Paketi "FLEX" olan ilk gidis ucusunun Offer ID sini al
+//* xml "Envelope.Body.AirShoppingRS.OffersGroup.AirlineOffers.Offer[0].@OfferID.text()" xpathinindeki elementi "offerId" keyiyle hashmape ekle
+
+# AirShopping sorgusundan donen ilk ucusun gidis ve donus icin OfferID degerleri ve ResponseID degeri kaydedilir
+* xml "Envelope.Body.AirShoppingRS.ShoppingResponseID.ResponseID.text()" xpathinindeki elementi "responseId" keyiyle hashmape ekle
+* Paketi "ECO" olan ilk gidis ucusunun Offer ID sini al
+* Paketi "ECO" olan ilk donus ucusunun Offer ID sini al
+# AirShopping sorgusundan donen ilk ucusun gidis ve donus icin OfferID degerleri ve ResponseID degeri kaydedilir ADV
+* xml "Envelope.Body.AirShoppingRS.ShoppingResponseID.ResponseID.text()" xpathinindeki elementi "responseId" keyiyle hashmape ekle
+* Paketi "ADV" olan ilk gidis ucusunun Offer ID sini al
+* Paketi "ADV" olan ilk donus ucusunun Offer ID sini al
+
+# AirShopping sorgusundan donen ilk ucusun gidis ve donus icin OfferID degerleri ve ResponseID degeri kaydedilir FLEX
+* xml "Envelope.Body.AirShoppingRS.ShoppingResponseID.ResponseID.text()" xpathinindeki elementi "responseId" keyiyle hashmape ekle
+* Paketi "FLEX" olan ilk gidis ucusunun Offer ID sini al
+* Paketi "FLEX" olan ilk donus ucusunun Offer ID sini al
+
+//* xml "Envelope.Body.AirShoppingRS.OffersGroup.AirlineOffers.Offer[0].@OfferID.text()" xpathinindeki elementi "offerId_gidis" keyiyle hashmape ekle
+//* xml "Envelope.Body.AirShoppingRS.OffersGroup.AirlineOffers.Offer[12].@OfferID.text()" xpathinindeki elementi "offerId_donus" keyiyle hashmape ekle
+
+# AirShopping sorgusundan donen Ucret bilgisi kayit edilir
+* xml "Envelope.Body.AirShoppingRS.OffersGroup.AirlineOffers.Offer[0].OfferItem.TotalPriceDetail.TotalAmount.SimpleCurrencyPrice.text()" xpathinindeki elementi "simpleCurrencyPrice" keyiyle hashmape ekle
+* xml "Envelope.Body.AirShoppingRS.OffersGroup.AirlineOffers.Offer[0].OfferItem.TotalPriceDetail.BaseAmount.text()" xpathinindeki elementi "baseAmount" keyiyle hashmape ekle
+* xml "Envelope.Body.AirShoppingRS.OffersGroup.AirlineOffers.Offer[0].OfferItem.TotalPriceDetail.Surcharges.Surcharge.Total.text()" xpathinindeki elementi "surcharge" keyiyle hashmape ekle
+* xml "Envelope.Body.AirShoppingRS.OffersGroup.AirlineOffers.Offer[0].OfferItem.TotalPriceDetail.Taxes.Total.text()" xpathinindeki elementi "taxes" keyiyle hashmape ekle
+* xml "Envelope.Body.AirShoppingRS.OffersGroup.AirlineOffers.Offer[0].OfferItem.TotalPriceDetail.Fees.Total.text()" xpathinindeki elementi "fees" keyiyle hashmape ekle
+
+
+# DOM Multiport
+* "doAirShopping_OWCokYolcuMultiport" requestine "replaceAirportCodefirst" yerine "SAW" "replaceAirportCodesecond" yerine "AYT" ve "replaceDatefirst" olarak "6" gün ileri tarih, "replaceAirportCodethird" yerine "AYT" "replaceAirportCodefourth" yerine "TZX" ve "replaceDatesecond" olarak "7" gün ileri tarih  yazilir
+
+# INT Multiport
+* "doAirShopping_OWCokYolcuMultiport" requestine "replaceAirportCodefirst" yerine "DLM" "replaceAirportCodesecond" yerine "STN" ve "replaceDatefirst" olarak "6" gün ileri tarih, "replaceAirportCodethird" yerine "STN" "replaceAirportCodefourth" yerine "SAW" ve "replaceDatesecond" olarak "7" gün ileri tarih  yazilir
+
+# AirShopping sorgusundan Multiport ucuslarinin OfferID ve ResponseID alani kaydedilir
+* xml "Envelope.Body.AirShoppingRS.ShoppingResponseID.ResponseID.text()" xpathinindeki elementi "responseId" keyiyle hashmape ekle
+* Paketi "ECO" olan ilk gidis ucusunun Offer ID sini al
+* Paketi "ECO" olan ikinci gidis ucusunun Offer ID sini al

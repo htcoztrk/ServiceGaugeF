@@ -1,0 +1,9 @@
+Created by testinium on 24.09.2022
+
+
+# AirDocIssue sorgusundan donen Surname ve BookingReference alani doCancelCommit servisindeki ilgili alana girilir
+* "doCancelCommit" requestine "replaceSurname" yerine hashmapdeki "surname" ve "replaceBookingReference" yerine "pnr" degerlerini ekle
+
+# doCancelCommit servisi icin sorgu gonderilir
+* "https://prepndc.flypgs.com:443/CraneNDC/CraneNDCService" servisine istek at
+

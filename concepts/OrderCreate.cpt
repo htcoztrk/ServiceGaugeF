@@ -1,0 +1,75 @@
+Created by testinium on 23.09.2022
+
+# AirShopping sorgusundan donen OfferID ve ResponseID alani OrderCreate servisindeki ilgili alana girilir
+* "doOrderCreate_OW1ADT" requestine "replaceOffer" yerine hashmapdeki "offerId_gidis" ve "replaceResponse" yerine "responseId" degerlerini ekle
+# AirShopping 2 adt sorgusundan donen OfferID ve ResponseID alani OrderCreate servisindeki ilgili alana girilir
+* "doOrderCreate_OW2ADT" requestine "replaceOffer" yerine hashmapdeki "offerId_gidis" ve "replaceResponse" yerine "responseId" degerlerini ekle
+# AirShopping cok yolcu sorgusundan donen OfferID ve ResponseID alani OrderCreate servisindeki ilgili alana girilir
+* "doOrderCreate_OWCokYolcu" requestine "replaceOffer" yerine hashmapdeki "offerId_gidis" ve "replaceResponse" yerine "responseId" degerlerini ekle
+# AirShopping 2 yolcu sorgusundan donen OfferID ve ResponseID alani OrderCreate servisindeki ilgili alana girilir
+* "doOrderCreate_OW1Adt1Ch" requestine "replaceOffer" yerine hashmapdeki "offerId_gidis" ve "replaceResponse" yerine "responseId" degerlerini ekle
+
+# AirShopping RT cok yolcu sorgusundan donen OfferID ve ResponseID alani OrderCreate servisindeki ilgili alana girilir
+* "doOrderCreate_RTCokYolcu" requestine "replaceOffer" yerine hashmapdeki "offerId_gidis" ve "replaceResponse" yerine "responseId" degerlerini ekle
+
+
+
+# OrderCreate sorgusu icin AgentUserID ile Username in ayni mi oldugu kontrol edilir
+* "doOrderCreate_OWCokYolcu" xmlinde "Envelope.Body.OrderCreateRQ.Party.Sender.TravelAgencySender.AgentUser.AgentUserID.text()" xpathinindeki elementi headerdaki "Username" keyli deger ile karsilastir
+
+# OrderCreate sorgusundan donen OrderID ve Ucret kismi kayit edilir
+* xml "Envelope.Body.OrderViewRS.Response.Order.@OrderID.text()" xpathinindeki elementi "orderId" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.TotalOrderPrice.SimpleCurrencyPrice.text()" xpathinindeki elementi "currencyPrice" keyiyle hashmape ekle
+# OrderCreate sorgusundan donen OrderID Ucret ve pnr kismi kayit edilir
+* xml "Envelope.Body.OrderViewRS.Response.Order.@OrderID.text()" xpathinindeki elementi "orderId" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.TotalOrderPrice.SimpleCurrencyPrice.text()" xpathinindeki elementi "currencyPrice" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.BookingReferences.BookingReference.ID.text()" xpathinindeki elementi "pnr" keyiyle hashmape ekle
+
+# AirShopping sorgusundan donen ucret bilgisi ile OrderCreate sorgusundan donen ucret bilgisi ayni mi kontrol edilir
+* xml "Envelope.Body.OrderViewRS.Response.Order.TotalOrderPrice.SimpleCurrencyPrice.text()" xpathinindeki elementi hashmapteki "simpleCurrencyPrice" keyli deger ile karsilastir
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem[0].PriceDetail.BaseAmount.text()" xpathinindeki elementi hashmapteki "baseAmount" keyli deger ile karsilastir
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem[0].PriceDetail.Surcharges.Surcharge.Total.text()" xpathinindeki elementi hashmapteki "surcharge" keyli deger ile karsilastir
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem[0].PriceDetail.Taxes.Total.text()" xpathinindeki elementi hashmapteki "taxes" keyli deger ile karsilastir
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem[0].PriceDetail.Fees.Breakdown.Fee.Amount.text()" xpathinindeki elementi hashmapteki "fees" keyli deger ile karsilastir
+
+# OrderCreate sorgusundan donen OrderID PassengerID SegmentRef ve Ucret kısmı kayıt edilir
+* xml "Envelope.Body.OrderViewRS.Response.Order.@OrderID.text()" xpathinindeki elementi "orderId" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.DataLists.PassengerList.Passenger[0].@PassengerID.text()" xpathinindeki elementi "passengerId" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem.Service.SegmentRef[0].text()" xpathinindeki elementi "segmentRef1" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem.Service.SegmentRef[1].text()" xpathinindeki elementi "segmentRef2" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem.Service.PassengerRef[0].text()" xpathinindeki elementi "passengerRef" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.TotalOrderPrice.SimpleCurrencyPrice.text()" xpathinindeki elementi "simplecurrencyPrice" keyiyle hashmape ekle
+
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem[0].Service.SegmentRef.text()" xpathinindeki elementi "segmentReff1" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.DataLists.PassengerList.Passenger.@PassengerID.text()" xpathinindeki elementi "passengerId1" keyiyle hashmape ekle
+
+
+# OrderCreate sorgusundan donen OrderID PassengerID SegmentRef(4 adet) ve Ucret kısmı kayıt edilir
+* xml "Envelope.Body.OrderViewRS.Response.Order.@OrderID.text()" xpathinindeki elementi "orderId" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.DataLists.PassengerList.Passenger[0].@PassengerID.text()" xpathinindeki elementi "passengerId1" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.DataLists.PassengerList.Passenger[1].@PassengerID.text()" xpathinindeki elementi "passengerId2" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.DataLists.PassengerList.Passenger[2].@PassengerID.text()" xpathinindeki elementi "passengerId3" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.DataLists.PassengerList.Passenger[3].@PassengerID.text()" xpathinindeki elementi "passengerId4" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem.Service.SegmentRef[0].text()" xpathinindeki elementi "segmentRef1" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem.Service.SegmentRef[1].text()" xpathinindeki elementi "segmentRef2" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem.Service.SegmentRef[2].text()" xpathinindeki elementi "segmentRef3" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem.Service.SegmentRef[3].text()" xpathinindeki elementi "segmentRef4" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem.Service.PassengerRef[0].text()" xpathinindeki elementi "passengerRef" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem.Service.PassengerRef[0].text()" xpathinindeki elementi "passengerId" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.TotalOrderPrice.SimpleCurrencyPrice.text()" xpathinindeki elementi "currencyPrice" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.BookingReferences.BookingReference.ID.text()" xpathinindeki elementi "pnr" keyiyle hashmape ekle
+
+# AirShopping cok yolcu servisinden donen gidis ve donus icin OfferID degerleri ve ResponseID degeri OrderCreate servisindeki ilgili alana yazilir
+* "doOrderCreate_RTCokYolcu" requestine "replaceOffer_gidis" yerine hashmapdeki "offerId_gidis" "replaceOffer_donus" yerine "offerId_donus" ve "replaceResponse_1" yerine "responseId" ve "replaceResponse_2" yerine "responseId" degerlerini ekle
+
+# AirShopping 2 ADT servisinden donen gidis ve donus icin OfferID degerleri ve ResponseID degeri OrderCreate servisindeki ilgili alana yazilir
+* "doOrderCreate_RT2ADT" requestine "replaceOffer_gidis" yerine hashmapdeki "offerId_gidis" "replaceOffer_donus" yerine "offerId_donus" ve "replaceResponse_1" yerine "responseId" ve "replaceResponse_2" yerine "responseId" degerlerini ekle
+
+# AirShopping 2 yolcu servisinden donen gidis ve donus icin OfferID degerleri ve ResponseID degeri OrderCreate servisindeki ilgili alana yazilir
+* "doOrderCreate_RT2Yolcu" requestine "replaceOffer_gidis" yerine hashmapdeki "offerId_gidis" "replaceOffer_donus" yerine "offerId_donus" ve "replaceResponse_1" yerine "responseId" ve "replaceResponse_2" yerine "responseId" degerlerini ekle
+
+# AirShopping 4 yolcu servisinden donen gidis ve donus icin OfferID degerleri ve ResponseID degeri OrderCreate servisindeki ilgili alana yazilir
+* "doOrderCreate_RT4Yolcu" requestine "replaceOffer_gidis" yerine hashmapdeki "offerId_gidis" "replaceOffer_donus" yerine "offerId_donus" ve "replaceResponse_1" yerine "responseId" ve "replaceResponse_2" yerine "responseId" degerlerini ekle
+
+# AirShopping servisinden donen gidis ve donus icin OfferID degerleri ve ResponseID degeri OrderCreate servisindeki ilgili alana yazilir
+* "doOrderCreate_RT1ADT" requestine "replaceOffer_gidis" yerine hashmapdeki "offerId_gidis" "replaceOffer_donus" yerine "offerId_donus" ve "replaceResponse_1" yerine "responseId" ve "replaceResponse_2" yerine "responseId" degerlerini ekle

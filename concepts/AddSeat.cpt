@@ -1,0 +1,58 @@
+Created by testinium on 25.09.2022
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 1.bacak icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfirst_koltuk" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId" "replaceSegmentId" yerine "segmentRef1" "replaceServiceDefId" yerine "offerItemIdfirst_koltuk" ve "replaceRowNumber" yerine "rowNumber_first" ve "replaceColumnNumber" yerine "columnNumber_first" degerlerini ekle
+//# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 1.bacak icin AddSeat servisindeki ilgili alana girilir
+//* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfirst_koltuk" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId" "replaceSegmentId" yerine "segmentRef1" "replaceServiceDefId" yerine "offerItemIdfirst_koltuk" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 1.bacak 2.yolcu icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfirst_koltuk" "replacePassengerRefs" yerine "passengerId3" ve "replacePassengerId" yerine "passengerId3" "replaceSegmentId" yerine "segmentRef1" "replaceServiceDefId" yerine "offerItemIdfirst_koltuk" ve "replaceRowNumber" yerine "rowNumber_first" ve "replaceColumnNumber" yerine "columnNumber_first" degerlerini ekle
+//# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 1.bacak icin AddSeat servisindeki ilgili alana girilir
+//* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfirst_koltuk" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId" "replaceSegmentId" yerine "segmentRef1" "replaceServiceDefId" yerine "offerItemIdfirst_koltuk" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 1.bacak 2.adt icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfirst_koltuk" "replacePassengerRefs" yerine "passengerId2" ve "replacePassengerId" yerine "passengerId2" "replaceSegmentId" yerine "segmentRef1" "replaceServiceDefId" yerine "offerItemIdfirst_koltuk" ve "replaceRowNumber" yerine "rowNumber_first" ve "replaceColumnNumber" yerine "columnNumber_first" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 1.bacak 3.yolcu icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfirst_koltuk" "replacePassengerRefs" yerine "passengerId4" ve "replacePassengerId" yerine "passengerId4" "replaceSegmentId" yerine "segmentRef1" "replaceServiceDefId" yerine "offerItemIdfirst_koltuk" ve "replaceRowNumber" yerine "rowNumber_first" ve "replaceColumnNumber" yerine "columnNumber_first" degerlerini ekle
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 2.bacak icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdsecond_koltuk" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId" "replaceSegmentId" yerine "segmentRef2" "replaceServiceDefId" yerine "offerItemIdsecond_koltuk" ve "replaceRowNumber" yerine "rowNumber_second" ve "replaceColumnNumber" yerine "columnNumber_second" degerlerini ekle
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 2.bacak 2.yolcu icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdsecond_koltuk" "replacePassengerRefs" yerine "passengerId3" ve "replacePassengerId" yerine "passengerId3" "replaceSegmentId" yerine "segmentRef2" "replaceServiceDefId" yerine "offerItemIdsecond_koltuk" ve "replaceRowNumber" yerine "rowNumber_second" ve "replaceColumnNumber" yerine "columnNumber_second" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 2.bacak 2.adt icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdsecond_koltuk" "replacePassengerRefs" yerine "passengerId2" ve "replacePassengerId" yerine "passengerId2" "replaceSegmentId" yerine "segmentRef2" "replaceServiceDefId" yerine "offerItemIdsecond_koltuk" ve "replaceRowNumber" yerine "rowNumber_second" ve "replaceColumnNumber" yerine "columnNumber_second" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 2.bacak 3.yolcu icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdsecond_koltuk" "replacePassengerRefs" yerine "passengerId4" ve "replacePassengerId" yerine "passengerId4" "replaceSegmentId" yerine "segmentRef2" "replaceServiceDefId" yerine "offerItemIdsecond_koltuk" ve "replaceRowNumber" yerine "rowNumber_second" ve "replaceColumnNumber" yerine "columnNumber_second" degerlerini ekle
+
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 3.bacak icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdthird_koltuk" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId" "replaceSegmentId" yerine "segmentRef3" "replaceServiceDefId" yerine "offerItemIdthird_koltuk" ve "replaceRowNumber" yerine "rowNumber_third" ve "replaceColumnNumber" yerine "columnNumber_third" degerlerini ekle
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 4.bacak icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfourth_koltuk" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId" "replaceSegmentId" yerine "segmentRef4" "replaceServiceDefId" yerine "offerItemIdfourth_koltuk" ve "replaceRowNumber" yerine "rowNumber_fourth" ve "replaceColumnNumber" yerine "columnNumber_fourth" degerlerini ekle
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 3.bacak 2.yolcu icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdthird_koltuk" "replacePassengerRefs" yerine "passengerId3" ve "replacePassengerId" yerine "passengerId3" "replaceSegmentId" yerine "segmentRef3" "replaceServiceDefId" yerine "offerItemIdthird_koltuk" ve "replaceRowNumber" yerine "rowNumber_third" ve "replaceColumnNumber" yerine "columnNumber_third" degerlerini ekle
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 4.bacak 2.yolcu icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfourth_koltuk" "replacePassengerRefs" yerine "passengerId3" ve "replacePassengerId" yerine "passengerId3" "replaceSegmentId" yerine "segmentRef4" "replaceServiceDefId" yerine "offerItemIdfourth_koltuk" ve "replaceRowNumber" yerine "rowNumber_fourth" ve "replaceColumnNumber" yerine "columnNumber_fourth" degerlerini ekle
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 3.bacak 2.adt icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdthird_koltuk" "replacePassengerRefs" yerine "passengerId2" ve "replacePassengerId" yerine "passengerId2" "replaceSegmentId" yerine "segmentRef3" "replaceServiceDefId" yerine "offerItemIdthird_koltuk" ve "replaceRowNumber" yerine "rowNumber_third" ve "replaceColumnNumber" yerine "columnNumber_third" degerlerini ekle
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 4.bacak 2.adt icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfourth_koltuk" "replacePassengerRefs" yerine "passengerId2" ve "replacePassengerId" yerine "passengerId2" "replaceSegmentId" yerine "segmentRef4" "replaceServiceDefId" yerine "offerItemIdfourth_koltuk" ve "replaceRowNumber" yerine "rowNumber_fourth" ve "replaceColumnNumber" yerine "columnNumber_fourth" degerlerini ekle
+
+# Coklu Yolcu icin Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 1.bacak icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfirst_koltuk" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId1" "replaceSegmentId" yerine "segmentRef1" "replaceServiceDefId" yerine "offerItemIdfirst_koltuk" degerlerini ekle
+
+# Coklu Yolcu icinKayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 2.bacak icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdsecond_koltuk" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId1" "replaceSegmentId" yerine "segmentRef2" "replaceServiceDefId" yerine "offerItemIdsecond_koltuk" degerlerini ekle
+
+# Coklu Yolcu icin Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 3.bacak icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdthird_koltuk" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId1" "replaceSegmentId" yerine "segmentRef3" "replaceServiceDefId" yerine "offerItemIdthird_koltuk" degerlerini ekle
+
+# Coklu Yolcu icin Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 4.bacak icin AddSeat servisindeki ilgili alana girilir
+* "doAddSsr_Addseat" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfourth_koltuk" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId1" "replaceSegmentId" yerine "segmentRef4" "replaceServiceDefId" yerine "offerItemIdfourth_koltuk" degerlerini ekle
+
+
+
+

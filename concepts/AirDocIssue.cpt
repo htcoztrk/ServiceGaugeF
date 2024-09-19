@@ -1,0 +1,43 @@
+Created by testinium on 23.09.2022
+
+//# Cok yolcu icin OrderCreate sorgusundan donen OrderID ve CurrencyPrice alani AirDocIssue servisindeki ilgili alana girilir
+//* "doAirDocIssue_KKCokYolcu" requestine "replaceOrder" yerine hashmapdeki "orderId" ve "replacePrice" yerine "totalPrice" degerlerini ekle
+//# OrderCreate sorgusundan donen OrderID ve CurrencyPrice alani AirDocIssue servisindeki ilgili alana girilir
+//* "doAirDocIssue_KK1ADT" requestine "replaceOrder" yerine hashmapdeki "orderId" ve "replacePrice" yerine "totalPrice" degerlerini ekle
+
+# OrderCreate sorgusundan donen OrderID ve CurrencyPrice alani AirDocIssue servisindeki ilgili alana girilir (IsBankasi)
+* "doAirDocIssue_KK1ADT_IsBankasi" requestine "replaceOrder" yerine hashmapdeki "orderId" ve "replacePrice" yerine "currencyPrice" degerlerini ekle
+# OrderCreate sorgusundan donen OrderID ve CurrencyPrice alani AirDocIssue servisindeki ilgili alana girilir (Finans)
+* "doAirDocIssue_KK1ADT_Finans" requestine "replaceOrder" yerine hashmapdeki "orderId" ve "replacePrice" yerine "currencyPrice" degerlerini ekle
+
+# OrderCreate sorgusundan donen OrderID ve CurrencyPrice alani AirDocIssue servisindeki ilgili alana girilir
+* "doAirDocIssue_KK1ADT" requestine "replaceOrder" yerine hashmapdeki "orderId" ve "replacePrice" yerine "currencyPrice" degerlerini ekle
+# Toplam ssr ucreti odenir
+* "doSellSsr" requestine "replaceOrderId" yerine hashmapdeki "orderId" ve "replacePrice" yerine "currencyPrice" degerlerini ekle
+
+
+-----------------------------------
+# Cok Yolcu icin OrderCreate sorgusundan donen OrderID ve CurrencyPrice alani AirDocIssue servisindeki ilgili alana girilir
+* "doAirDocIssue_KKCokYolcu" requestine "replaceOrder" yerine hashmapdeki "orderId" ve "replacePrice" yerine "currencyPrice" degerlerini ekle
+# 2 ADT icin OrderCreate sorgusundan donen OrderID ve CurrencyPrice alani AirDocIssue servisindeki ilgili alana girilir
+* "doAirDocIssue_KK2Adt" requestine "replaceOrder" yerine hashmapdeki "orderId" ve "replacePrice" yerine "currencyPrice" degerlerini ekle
+# Cok Yolcu icin OrderCreate sorgusundan donen OrderID ve CurrencyPrice alani AirDocIssue servisindeki ilgili alana girilir MCO
+* "doAirDocIssue_KKCokYolcu_MCO" requestine "replaceOrder" yerine hashmapdeki "orderId" ve "replacePrice" yerine "currencyPrice" degerlerini ekle
+
+# Cok Yolcu icin OrderCreate sorgusundan donen OrderID ve CurrencyPrice alani AirDocIssue servisindeki ilgili alana girilir (Finans)
+* "doAirDocIssue_KKCokYolcu_Finans" requestine "replaceOrder" yerine hashmapdeki "orderId" ve "replacePrice" yerine "currencyPrice" degerlerini ekle
+# Cok Yolcu icin OrderCreate sorgusundan donen OrderID ve CurrencyPrice alani AirDocIssue servisindeki ilgili alana girilir (Is Bankasi)
+* "doAirDocIssue_KKCokYolcu_IsBankasi" requestine "replaceOrder" yerine hashmapdeki "orderId" ve "replacePrice" yerine "currencyPrice" degerlerini ekle
+# 4 Yolcu icin OrderCreate sorgusundan donen OrderID ve CurrencyPrice alani AirDocIssue servisindeki ilgili alana girilir (Is Bankasi)
+* "doAirDocIssue_KK4Yolcu" requestine "replaceOrder" yerine hashmapdeki "orderId" ve "replacePrice" yerine "currencyPrice" degerlerini ekle
+# 2 Yolcu icin OrderCreate sorgusundan donen OrderID ve CurrencyPrice alani AirDocIssue servisindeki ilgili alana girilir (Is Bankasi)
+* "doAirDocIssue_KK1Adt1Ch" requestine "replaceOrder" yerine hashmapdeki "orderId" ve "replacePrice" yerine "currencyPrice" degerlerini ekle
+
+# AirDocIssue sorgusundan donen Surname ve BookingReference kismi kayit edilir
+* xml "Envelope.Body.OrderViewRS.Response.DataLists.PassengerList.Passenger[0].Individual.Surname.text()" xpathinindeki elementi "surname" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.BookingReferences.BookingReference.ID.text()" xpathinindeki elementi "bookingReference" keyiyle hashmape ekle
+
+# MCO icin OrderCreate sorgusundan donen OrderID ve CurrencyPrice alani AirDocIssue servisindeki ilgili alana girilir
+* "doAirDocIssue_MCO1ADT" requestine "replaceOrder" yerine hashmapdeki "orderId" ve "replacePrice" yerine "currencyPrice" degerlerini ekle
+
+

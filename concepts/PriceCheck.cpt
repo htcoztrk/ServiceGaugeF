@@ -1,0 +1,12 @@
+Created by testinium on 20.09.2022
+
+
+# Price Check sorgusu icin AgentUserID ile Username in ayni mi oldugu kontrol edilir
+* "doAirOWT1" xmlinde "Envelope.Body.AirShoppingRQ.Party.Sender.TravelAgencySender.AgentUser.AgentUserID.text()" xpathinindeki elementi headerdaki "Username" keyli deger ile karsilastir
+
+# Responsedan donen ucret bilgileri tutulur
+* xml "Envelope.Body.OrderViewRS.Response.Order.TotalOrderPrice.SimpleCurrencyPrice.text()" xpathinindeki elementi "simpleCurrencyPrice" keyiyle hashmape ekle
+
+
+
+

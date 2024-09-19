@@ -1,0 +1,55 @@
+Created by testinium on 20.09.2022
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 1.bacak icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_first" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId" "replaceSegmentId" yerine "segmentRef1" "replaceServiceDefId" yerine "offerItemId_first" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 1.bacak 2.yolcu icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_first" "replacePassengerRefs" yerine "passengerId3" ve "replacePassengerId" yerine "passengerId3" "replaceSegmentId" yerine "segmentRef1" "replaceServiceDefId" yerine "offerItemId_first" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 1.bacak 2.adt icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_first" "replacePassengerRefs" yerine "passengerId2" ve "replacePassengerId" yerine "passengerId2" "replaceSegmentId" yerine "segmentRef1" "replaceServiceDefId" yerine "offerItemId_first" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 1.bacak 3.yolcu icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_first" "replacePassengerRefs" yerine "passengerId4" ve "replacePassengerId" yerine "passengerId4" "replaceSegmentId" yerine "segmentRef1" "replaceServiceDefId" yerine "offerItemId_first" degerlerini ekle
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 2.bacak icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_second" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId" "replaceSegmentId" yerine "segmentRef2" "replaceServiceDefId" yerine "offerItemId_second" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 2.bacak 2.yolcu icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_second" "replacePassengerRefs" yerine "passengerId3" ve "replacePassengerId" yerine "passengerId3" "replaceSegmentId" yerine "segmentRef2" "replaceServiceDefId" yerine "offerItemId_second" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 2.bacak 2.adt icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_second" "replacePassengerRefs" yerine "passengerId2" ve "replacePassengerId" yerine "passengerId2" "replaceSegmentId" yerine "segmentRef2" "replaceServiceDefId" yerine "offerItemId_second" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 2.bacak 3.yolcu icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_second" "replacePassengerRefs" yerine "passengerId4" ve "replacePassengerId" yerine "passengerId4" "replaceSegmentId" yerine "segmentRef2" "replaceServiceDefId" yerine "offerItemId_second" degerlerini ekle
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 3.bacak icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_third" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId" "replaceSegmentId" yerine "segmentRef3" "replaceServiceDefId" yerine "offerItemId_third" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 3.bacak 2.yolcu icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_third" "replacePassengerRefs" yerine "passengerId3" ve "replacePassengerId" yerine "passengerId3" "replaceSegmentId" yerine "segmentRef3" "replaceServiceDefId" yerine "offerItemId_third" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 3.bacak 2.adt icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_third" "replacePassengerRefs" yerine "passengerId2" ve "replacePassengerId" yerine "passengerId2" "replaceSegmentId" yerine "segmentRef3" "replaceServiceDefId" yerine "offerItemId_third" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 3.bacak 3.yolcu icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_third" "replacePassengerRefs" yerine "passengerId4" ve "replacePassengerId" yerine "passengerId4" "replaceSegmentId" yerine "segmentRef3" "replaceServiceDefId" yerine "offerItemId_third" degerlerini ekle
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 4.bacak icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_fourth" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId" "replaceSegmentId" yerine "segmentRef4" "replaceServiceDefId" yerine "offerItemId_fourth" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 4.bacak 2.yolcu icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_fourth" "replacePassengerRefs" yerine "passengerId3" ve "replacePassengerId" yerine "passengerId3" "replaceSegmentId" yerine "segmentRef4" "replaceServiceDefId" yerine "offerItemId_fourth" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 4.bacak 2.adt icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_fourth" "replacePassengerRefs" yerine "passengerId2" ve "replacePassengerId" yerine "passengerId2" "replaceSegmentId" yerine "segmentRef4" "replaceServiceDefId" yerine "offerItemId_fourth" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 4.bacak 3.yolcu icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_fourth" "replacePassengerRefs" yerine "passengerId4" ve "replacePassengerId" yerine "passengerId4" "replaceSegmentId" yerine "segmentRef4" "replaceServiceDefId" yerine "offerItemId_fourth" degerlerini ekle
+
+-----------------------------------------------------
+
+# Cok Yolcu icin Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 1.bacak icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_first" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId1" "replaceSegmentId" yerine "segmentRef1" "replaceServiceDefId" yerine "offerItemId_first" degerlerini ekle
+# Cok Yolcu icin Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 1.bacak icin AddCatering servisindeki ilgili alana girilir 2.yolcu
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_first" "replacePassengerRefs" yerine "passengerId3" ve "replacePassengerId" yerine "passengerId3" "replaceSegmentId" yerine "segmentRef1" "replaceServiceDefId" yerine "offerItemId_first" degerlerini ekle
+
+# Cok Yolcu icin Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 2.bacak icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_second" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId1" "replaceSegmentId" yerine "segmentRef2" "replaceServiceDefId" yerine "offerItemId_second" degerlerini ekle
+
+
+# Cok Yolcu icin Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 3.bacak icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_third" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId1" "replaceSegmentId" yerine "segmentRef3" "replaceServiceDefId" yerine "offerItemId_third" degerlerini ekle
+
+# Cok Yolcu icin Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 4.bacak icin AddCatering servisindeki ilgili alana girilir
+* "doAddSsr_AddCatering" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemId_fourth" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId1" "replaceSegmentId" yerine "segmentRef4" "replaceServiceDefId" yerine "offerItemId_fourth" degerlerini ekle
+

@@ -1,0 +1,92 @@
+Created by testinium on 25.09.2022
+
+# OrderCreate servisinden donen SegmentKey(1.bacak icin) ve OrderId alanlari doSeatAvailabilityPnr servisindeki ilgili alana girilir
+* "doSeatAvailabilityPnr" requestine "replaceSegmentKey" yerine hashmapdeki "segmentRef1" ve "replaceOrderId" yerine "orderId" degerlerini ekle
+
+# doSeatAvailability servisinden donen sorgudan sececegimiz koltugun OfferItemıd(1. bacak icin) degeri kaydedilir
+//* xml "Envelope.Body.SeatAvailabilityRS.ALaCarteOffer.ALaCarteOfferItem[0].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemIdfirst_koltuk" keyiyle hashmape ekle
+* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Number.text()" xpathinindeki elementi "rowNumber_first" keyiyle hashmape ekle
+* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Seat[0].Column.text()" xpathinindeki elementi "columnNumber_first" keyiyle hashmape ekle
+* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Seat[0].OfferItemRefs.text()" xpathinindeki elementi "offerItemIdfirst_koltuk" keyiyle hashmape ekle
+# doSeatAvailability servisinden donen sorgudan sececegimiz koltugun OfferItemıd(1. bacak icin) degeri kaydedilir2
+//* xml "Envelope.Body.SeatAvailabilityRS.ALaCarteOffer.ALaCarteOfferItem[0].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemIdfirst_koltuk" keyiyle hashmape ekle
+* Seat status f olan ilk koltugun degerleri "rowNumber_first" "columnNumber_first" ve "offerItemIdfirst_koltuk" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Number.text()" xpathinindeki elementi "rowNumber_first" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Seat[0].Column.text()" xpathinindeki elementi "columnNumber_first" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Seat[0].OfferItemRefs.text()" xpathinindeki elementi "offerItemIdfirst_koltuk" keyiyle hashmape ekle
+# doSeatAvailability servisinden donen sorgudan sececegimiz koltugun OfferItemıd(1. bacak 2.yolcu icin) degeri kaydedilir2
+//* xml "Envelope.Body.SeatAvailabilityRS.ALaCarteOffer.ALaCarteOfferItem[0].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemIdfirst_koltuk" keyiyle hashmape ekle
+* Seat status f olan ilk koltugun degerleri "rowNumber_third" "columnNumber_third" ve "offerItemIdfirst_third" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Number.text()" xpathinindeki elementi "rowNumber_first" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Seat[0].Column.text()" xpathinindeki elementi "columnNumber_first" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Seat[0].OfferItemRefs.text()" xpathinindeki elementi "offerItemIdfirst_koltuk" keyiyle hashmape ekle
+# doSeatAvailability servisinden donen sorgudan sececegimiz koltugun OfferItemıd(2. bacak icin) degeri kaydedilir2
+//* xml "Envelope.Body.SeatAvailabilityRS.ALaCarteOffer.ALaCarteOfferItem[0].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemIdfirst_koltuk" keyiyle hashmape ekle
+* Seat status f olan ilk koltugun degerleri "rowNumber_second" "columnNumber_second" ve "offerItemIdsecond_koltuk" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Number.text()" xpathinindeki elementi "rowNumber_first" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Seat[0].Column.text()" xpathinindeki elementi "columnNumber_first" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Seat[0].OfferItemRefs.text()" xpathinindeki elementi "offerItemIdfirst_koltuk" keyiyle hashmape ekle
+# doSeatAvailability servisinden donen sorgudan sececegimiz koltugun OfferItemıd(3. bacak icin) degeri kaydedilir2
+//* xml "Envelope.Body.SeatAvailabilityRS.ALaCarteOffer.ALaCarteOfferItem[0].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemIdfirst_koltuk" keyiyle hashmape ekle
+* Seat status f olan ilk koltugun degerleri "rowNumber_third" "columnNumber_third" ve "offerItemIdthird_koltuk" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Number.text()" xpathinindeki elementi "rowNumber_first" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Seat[0].Column.text()" xpathinindeki elementi "columnNumber_first" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Seat[0].OfferItemRefs.text()" xpathinindeki elementi "offerItemIdfirst_koltuk" keyiyle hashmape ekle
+# doSeatAvailability servisinden donen sorgudan sececegimiz koltugun OfferItemıd(4. bacak icin) degeri kaydedilir2
+//* xml "Envelope.Body.SeatAvailabilityRS.ALaCarteOffer.ALaCarteOfferItem[0].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemIdfirst_koltuk" keyiyle hashmape ekle
+* Seat status f olan ilk koltugun degerleri "rowNumber_fourth" "columnNumber_fourth" ve "offerItemIdfourth_koltuk" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Number.text()" xpathinindeki elementi "rowNumber_first" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Seat[0].Column.text()" xpathinindeki elementi "columnNumber_first" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Seat[0].OfferItemRefs.text()" xpathinindeki elementi "offerItemIdfirst_koltuk" keyiyle hashmape ekle
+# doSeatAvailability servisinden donen sorgudan sececegimiz koltugun OfferItemıd(2. bacak 2.yolcu icin) degeri kaydedilir2
+//* xml "Envelope.Body.SeatAvailabilityRS.ALaCarteOffer.ALaCarteOfferItem[0].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemIdfirst_koltuk" keyiyle hashmape ekle
+* Seat status f olan ilk koltugun degerleri "rowNumber_fourth" "columnNumber_fourth" ve "offerItemIdsecond_fourth" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Number.text()" xpathinindeki elementi "rowNumber_first" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Seat[0].Column.text()" xpathinindeki elementi "columnNumber_first" keyiyle hashmape ekle
+//* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[1].Seat[0].OfferItemRefs.text()" xpathinindeki elementi "offerItemIdfirst_koltuk" keyiyle hashmape ekle
+
+# doSeatAvailability servisinden donen sorgudan sececegimiz koltugun OfferItemıd(2. bacak icin) degeri kaydedilir
+* xml "Envelope.Body.SeatAvailabilityRS.ALaCarteOffer.ALaCarteOfferItem[1].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemIdsecond_koltuk" keyiyle hashmape ekle
+* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[0].Number.text()" xpathinindeki elementi "rowNumber_second" keyiyle hashmape ekle
+* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row.Seat[0].Column.text()" xpathinindeki elementi "columnNumber_second" keyiyle hashmape ekle
+
+# doSeatAvailability servisinden donen sorgudan sececegimiz koltugun OfferItemıd(3. bacak icin) degeri kaydedilir
+* xml "Envelope.Body.SeatAvailabilityRS.ALaCarteOffer.ALaCarteOfferItem[2].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemIdthird_koltuk" keyiyle hashmape ekle
+* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[0].Number.text()" xpathinindeki elementi "rowNumber_third" keyiyle hashmape ekle
+* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row.Seat[0].Column.text()" xpathinindeki elementi "columnNumber_third" keyiyle hashmape ekle
+
+# doSeatAvailability servisinden donen sorgudan sececegimiz koltugun OfferItemıd(4. bacak icin) degeri kaydedilir
+* xml "Envelope.Body.SeatAvailabilityRS.ALaCarteOffer.ALaCarteOfferItem[3].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemIdfourth_koltuk" keyiyle hashmape ekle
+* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[0].Number.text()" xpathinindeki elementi "rowNumber_fourth" keyiyle hashmape ekle
+* xml "Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row.Seat[0].Column.text()" xpathinindeki elementi "columnNumber_fourth" keyiyle hashmape ekle
+
+# OrderCreate servisinden donen SegmentKey(2.bacak icin) ve OrderId alanlari doSeatAvailabilityPnr servisindeki ilgili alana girilir
+* "doSeatAvailabilityPnr" requestine "replaceSegmentKey" yerine hashmapdeki "segmentRef2" ve "replaceOrderId" yerine "orderId" degerlerini ekle
+
+# OrderCreate servisinden donen SegmentKey(3.bacak icin) ve OrderId alanlari doSeatAvailabilityPnr servisindeki ilgili alana girilir
+* "doSeatAvailabilityPnr" requestine "replaceSegmentKey" yerine hashmapdeki "segmentRef3" ve "replaceOrderId" yerine "orderId" degerlerini ekle
+
+# OrderCreate servisinden donen SegmentKey(4.bacak icin) ve OrderId alanlari doSeatAvailabilityPnr servisindeki ilgili alana girilir
+* "doSeatAvailabilityPnr" requestine "replaceSegmentKey" yerine hashmapdeki "segmentRef4" ve "replaceOrderId" yerine "orderId" degerlerini ekle
+
+@Step("xml <yol> xpathinindeki elementi <element> keyiyle hashmape ekle")
+public void xpath(String yol,String element) throws IOException {
+    ResponseBody responseBodyCopy = response.peekBody(Long.MAX_VALUE);
+    XmlPath path = XmlPath.from(responseBodyCopy.string());
+    List<Node> seatNodes = path.get(yol + ".findAll { it -> it.name() == 'Seat' }");
+    int rowNum = Integer.parseInt(path.get("Envelope.Body.SeatAvailabilityRS.SeatMap.Cabin.Row[0].Number.text()"));
+    for (Node seatNode : seatNodes) {
+        String seatStatus = seatNode.get("SeatStatus.text()");
+        if (seatStatus.equals("F")) {
+            // if the seat status is F, add the element to the hashmap and return
+            hashMap.put(element, seatNode.get("Column.text()"));
+            System.out.println(element + " hashmape eklendi: " + hashMap.get(element));
+            return;
+        } else {
+            // if the seat status is not F, move to the next row
+            rowNum++;
+        }
+    }
+    hashMap.put(element, Integer.toString(rowNum));
+    System.out.println(element + " hashmape eklendi: " + hashMap.get(element));
+}

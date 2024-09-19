@@ -1,0 +1,25 @@
+Created by testinium on 25.09.2022
+
+# OrderCreate servisinden donen SegmentKey(1.bacak icin) ve OrderId alanlari CateringAvailabilityPnr servisindeki ilgili alana girilir
+* "doCateringAvailabilityPnr" requestine "replaceSegmentKey" yerine hashmapdeki "segmentRef1" ve "replaceOrderId" yerine "orderId" degerlerini ekle
+
+# CateringAvailabilityPnr servisinden donen sorgudan sececegimiz yemegin OfferItemıd(1. bacak icin) degeri kaydedilir
+* xml "Envelope.Body.ServiceListRS.ALaCarteOffer.ALaCarteOfferItem[0].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemId_first" keyiyle hashmape ekle
+
+# OrderCreate servisinden donen SegmentKey(2.bacak icin) ve OrderId alanlari CateringAvailabilityPnr servisindeki ilgili alana girilir
+* "doCateringAvailabilityPnr" requestine "replaceSegmentKey" yerine hashmapdeki "segmentRef2" ve "replaceOrderId" yerine "orderId" degerlerini ekle
+
+# OrderCreate servisinden donen SegmentKey(3.bacak icin) ve OrderId alanlari CateringAvailabilityPnr servisindeki ilgili alana girilir
+* "doCateringAvailabilityPnr" requestine "replaceSegmentKey" yerine hashmapdeki "segmentRef3" ve "replaceOrderId" yerine "orderId" degerlerini ekle
+
+# OrderCreate servisinden donen SegmentKey(4.bacak icin) ve OrderId alanlari CateringAvailabilityPnr servisindeki ilgili alana girilir
+* "doCateringAvailabilityPnr" requestine "replaceSegmentKey" yerine hashmapdeki "segmentRef4" ve "replaceOrderId" yerine "orderId" degerlerini ekle
+
+# CateringAvailabilityPnr servisinden donen sorgudan sececegimiz yemegin OfferItemıd(2. bacak icin) degeri kaydedilir
+* xml "Envelope.Body.ServiceListRS.ALaCarteOffer.ALaCarteOfferItem[0].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemId_second" keyiyle hashmape ekle
+
+# CateringAvailabilityPnr servisinden donen sorgudan sececegimiz yemegin OfferItemıd(3. bacak icin) degeri kaydedilir
+* xml "Envelope.Body.ServiceListRS.ALaCarteOffer.ALaCarteOfferItem[0].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemId_third" keyiyle hashmape ekle
+
+# CateringAvailabilityPnr servisinden donen sorgudan sececegimiz yemegin OfferItemıd(4. bacak icin) degeri kaydedilir
+* xml "Envelope.Body.ServiceListRS.ALaCarteOffer.ALaCarteOfferItem[0].Service.ServiceDefinitionRef.text()" xpathinindeki elementi "offerItemId_fourth" keyiyle hashmape ekle

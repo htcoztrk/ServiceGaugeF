@@ -1,0 +1,63 @@
+# OrderCreate sorgusundan donen OfferID ve SegmentRef alani OrderCreate servisindeki ilgili alana girilir reissue
+* "doReshopForReissue" requestine "replaceNewPort1" yerine "SAW" "replaceNewPort2" yerine "ESB" ve "replaceDate" olarak "4" gün ileri tarih yazilir ve "replaceOrderID" yerine hashmapdeki "orderId" ve "replaceSegmentId" yerine "segmentRef1" degerlerini ekle
+
+
+# Reissue sorgusundan donen ilk ucusun OfferID ve ResponseID alani kaydedilir
+* xml "Envelope.Body.OrderReshopRS.Response.ReShoppingResponseID.ResponseID.text()" xpathinindeki elementi "reshopResponseId" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderReshopRS.Response.ReshopOffers.ReshopOffer[0].@OfferID.text()" xpathinindeki elementi "reshopOfferId" keyiyle hashmape ekle
+//* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem.Service.SegmentRef[0].text()" xpathinindeki elementi "segmentRef1" keyiyle hashmape ekle
+
+//x.Envelope.Body.OrderReshopRS.Response.ReShoppingResponseID.ResponseID
+//x.Envelope.Body.OrderReshopRS.Response.ReshopOffers.ReshopOffer[0]
+//x.Envelope.Body.OrderReshopRS.Response.ReshopOffers.ReshopOffer[0]
+
+# Reissue sorgusundan donen OfferID responseID ve segmentID  alani reissuePreview servisindeki ilgili alana girilir
+* "doReissuePreview_ReissueTekSegment" requestine "replaceOrderID" yerine hashmapdeki "orderId" "replaceSegmentId" yerine "segmentRef1" ve "replaceNewOfferId" yerine "reshopOfferId" degerlerini ekle
+# Reissue sorgusundan donen OfferID responseID ve segment2  alani reissuePreview servisindeki ilgili alana girilir
+* "doReissuePreview_ReissueTekSegment" requestine "replaceOrderID" yerine hashmapdeki "orderId" "replaceSegmentId" yerine "segmentRef2" ve "replaceNewOfferId" yerine "reshopOfferId" degerlerini ekle
+
+# ReissuePreview servisindeki responseID alani kaydedilir
+* xml "Envelope.Body.OrderReshopRS.Response.ReShoppingResponseID.ResponseID.text()" xpathinindeki elementi "newResponseId" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderReshopRS.Response.ReshopOffers.ReshopOffer.DeleteOfferItem.ReshopDifferential.ReshopDue.ByPassenger.Total.Amount.text()" xpathinindeki elementi "newPrice" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderReshopRS.Response.ReshopOffers.ReshopOffer.DeleteOfferItem.ReshopDifferential.ReshopDue.ByAirline.Total.Amount.text()" xpathinindeki elementi "newPrice2" keyiyle hashmape ekle
+x.Envelope.Body.OrderReshopRS.Response.ReshopOffers.ReshopOffer.DeleteOfferItem.ReshopDifferential.ReshopDue.ByPassenger.Total.Amount
+x.Envelope.Body.OrderReshopRS.Response.ReShoppingResponseID.ResponseID
+xml "Envelope.Body.OrderReshopRS
+# ReissuePreview refund servisindeki responseID alani kaydedilir
+* xml "Envelope.Body.OrderReshopRS.Response.ReShoppingResponseID.ResponseID.text()" xpathinindeki elementi "newResponseId" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderReshopRS.Response.ReshopOffers.ReshopOffer.DeleteOfferItem.ReshopDifferential.ReshopDue.ByAirline.Total.Amount.text()" xpathinindeki elementi "newPrice" keyiyle hashmape ekle
+x.Envelope.Body.OrderReshopRS.Response.ReshopOffers.ReshopOffer.DeleteOfferItem.ReshopDifferential.ReshopDue.ByPassenger.Total.Amount
+x.Envelope.Body.OrderReshopRS.Response.ReShoppingResponseID.ResponseID
+xml "Envelope.Body.OrderReshopRS
+
+# ReissuePreview sorgusundan donen responceID ve newPrice alani reissueCommit servisindeki ilgili alana girilir
+* "doReissueCommit_ByPasOdemeReissueTekSegment" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceNewPrice" yerine "newPrice" "replaceNewResponseId" yerine "newResponseId" "replaceReshopOfferId" yerine "reshopOfferId" "replaceSegmentId" yerine "segmentRef1" degerlerini ekle
+
+
+
+# Reissue commit sorgusundan donen degerler kontrol edilir
+
+* xml "Envelope.Body.OrderViewRS.Response.Order.@OrderID.text()" xpathinindeki elementi "newOrderId" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.BookingReferences.BookingReference.ID.text()" xpathinindeki elementi "newPnr" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.Status.StatusCode.text()" xpathinindeki elementi "statusCode" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.TotalOrderPrice.SimpleCurrencyPrice.text()" xpathinindeki elementi "newCurrencyPrice" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.@OrderID.text()" xpathinindeki elementi "orderId" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.DataLists.PassengerList.Passenger[0].@PassengerID.text()" xpathinindeki elementi "passengerId1" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.DataLists.PassengerList.Passenger[1].@PassengerID.text()" xpathinindeki elementi "passengerId2" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.DataLists.PassengerList.Passenger[2].@PassengerID.text()" xpathinindeki elementi "passengerId3" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.DataLists.PassengerList.Passenger[3].@PassengerID.text()" xpathinindeki elementi "passengerId4" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem.Service.SegmentRef[0].text()" xpathinindeki elementi "segmentRef1" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem.Service.SegmentRef[1].text()" xpathinindeki elementi "segmentRef2" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem.Service.SegmentRef[2].text()" xpathinindeki elementi "segmentRef3" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem.Service.SegmentRef[3].text()" xpathinindeki elementi "segmentRef4" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem.Service.PassengerRef[0].text()" xpathinindeki elementi "passengerRef" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.OrderItems.OrderItem.Service.PassengerRef[0].text()" xpathinindeki elementi "passengerId" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.TotalOrderPrice.SimpleCurrencyPrice.text()" xpathinindeki elementi "currencyPrice" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.BookingReferences.BookingReference.ID.text()" xpathinindeki elementi "pnr" keyiyle hashmape ekle
+
+# Reissue commit sorgusundan donen degerler kontrol edilir open
+* xml "Envelope.Body.OrderViewRS.Response.Order.@OrderID.text()" xpathinindeki elementi "newOrderId" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.BookingReferences.BookingReference.ID.text()" xpathinindeki elementi "newPnr" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.Status.StatusCode.text()" xpathinindeki elementi "statusCode" keyiyle hashmape ekle
+* xml "Envelope.Body.OrderViewRS.Response.Order.TotalOrderPrice.SimpleCurrencyPrice.text()" xpathinindeki elementi "newCurrencyPrice" keyiyle hashmape ekle
+

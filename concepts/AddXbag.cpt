@@ -1,0 +1,48 @@
+Created by testinium on 25.09.2022
+
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 1.bacak icin AddXbag servisindeki ilgili alana girilir
+* "doAddSsr_AddXbag" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfirst_bagaj" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId" "replaceSegmentId" yerine "segmentRef1" "replaceServiceDefId" yerine "offerItemIdfirst_bagaj" degerlerini ekle
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 1.bacak icin AddXbag servisindeki ilgili alana girilir 2.yolcu
+* "doAddSsr_AddXbag" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfirst_bagaj" "replacePassengerRefs" yerine "passengerId3" ve "replacePassengerId" yerine "passengerId3" "replaceSegmentId" yerine "segmentRef1" "replaceServiceDefId" yerine "offerItemIdfirst_bagaj" degerlerini ekle
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 1.bacak icin AddXbag servisindeki ilgili alana girilir 3.yolcu
+* "doAddSsr_AddXbag" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfirst_bagaj" "replacePassengerRefs" yerine "passengerId4" ve "replacePassengerId" yerine "passengerId4" "replaceSegmentId" yerine "segmentRef1" "replaceServiceDefId" yerine "offerItemIdfirst_bagaj" degerlerini ekle
+
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 2.bacak icin AddXbag servisindeki ilgili alana girilir
+* "doAddSsr_AddXbag" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdsecond_bagaj" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId" "replaceSegmentId" yerine "segmentRef2" "replaceServiceDefId" yerine "offerItemIdsecond_bagaj" degerlerini ekle
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 2.bacak icin AddXbag servisindeki ilgili alana girilir 2.yolcu
+* "doAddSsr_AddXbag" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdsecond_bagaj" "replacePassengerRefs" yerine "passengerId3" ve "replacePassengerId" yerine "passengerId3" "replaceSegmentId" yerine "segmentRef2" "replaceServiceDefId" yerine "offerItemIdsecond_bagaj" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 2.bacak icin AddXbag servisindeki ilgili alana girilir 3.yolcu
+* "doAddSsr_AddXbag" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdsecond_bagaj" "replacePassengerRefs" yerine "passengerId4" ve "replacePassengerId" yerine "passengerId4" "replaceSegmentId" yerine "segmentRef2" "replaceServiceDefId" yerine "offerItemIdsecond_bagaj" degerlerini ekle
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 3.bacak icin AddXbag servisindeki ilgili alana girilir
+* "doAddSsr_AddXbag" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdthird_bagaj" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId1" "replaceSegmentId" yerine "segmentRef3" "replaceServiceDefId" yerine "offerItemIdthird_bagaj" degerlerini ekle
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 3.bacak icin AddXbag servisindeki ilgili alana girilir 2.yolcu
+* "doAddSsr_AddXbag" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdthird_bagaj" "replacePassengerRefs" yerine "passengerId3" ve "replacePassengerId" yerine "passengerId3" "replaceSegmentId" yerine "segmentRef3" "replaceServiceDefId" yerine "offerItemIdthird_bagaj" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 3.bacak icin AddXbag servisindeki ilgili alana girilir 3.yolcu
+* "doAddSsr_AddXbag" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdthird_bagaj" "replacePassengerRefs" yerine "passengerId4" ve "replacePassengerId" yerine "passengerId4" "replaceSegmentId" yerine "segmentRef3" "replaceServiceDefId" yerine "offerItemIdthird_bagaj" degerlerini ekle
+
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 4.bacak icin AddXbag servisindeki ilgili alana girilir
+* "doAddSsr_AddXbag" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfourth_bagaj" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId1" "replaceSegmentId" yerine "segmentRef4" "replaceServiceDefId" yerine "offerItemIdfourth_bagaj" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 4.bacak icin AddXbag servisindeki ilgili alana girilir 2.yolcu
+* "doAddSsr_AddXbag" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfourth_bagaj" "replacePassengerRefs" yerine "passengerId3" ve "replacePassengerId" yerine "passengerId3" "replaceSegmentId" yerine "segmentRef4" "replaceServiceDefId" yerine "offerItemIdfourth_bagaj" degerlerini ekle
+# Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 4.bacak icin AddXbag servisindeki ilgili alana girilir 3.yolcu
+* "doAddSsr_AddXbag" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfourth_bagaj" "replacePassengerRefs" yerine "passengerId4" ve "replacePassengerId" yerine "passengerId4" "replaceSegmentId" yerine "segmentRef4" "replaceServiceDefId" yerine "offerItemIdfourth_bagaj" degerlerini ekle
+
+----------------------------
+# Cok Yolcu icin Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 1.bacak icin AddXbag servisindeki ilgili alana girilir
+* "doAddSsr_AddXbag" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfirst_bagaj" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId1" "replaceSegmentId" yerine "segmentRef1" "replaceServiceDefId" yerine "offerItemIdfirst_bagaj" degerlerini ekle
+
+# Cok Yolcu icin Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 2.bacak icin AddXbag servisindeki ilgili alana girilir
+* "doAddSsr_AddXbag" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdsecond_bagaj" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId1" "replaceSegmentId" yerine "segmentRef2" "replaceServiceDefId" yerine "offerItemIdsecond_bagaj" degerlerini ekle
+
+# Cok Yolcu icin Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 3.bacak icin AddXbag servisindeki ilgili alana girilir
+* "doAddSsr_AddXbag" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdthird_bagaj" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId1" "replaceSegmentId" yerine "segmentRef3" "replaceServiceDefId" yerine "offerItemIdthird_bagaj" degerlerini ekle
+
+# Cok Yolcu icin Kayıtlarimizda bulunan OrderId, OfferItemId, PassengerRefs, PassengerId, SegmentId bilgileri 4.bacak icin AddXbag servisindeki ilgili alana girilir
+* "doAddSsr_AddXbag" requestine "replaceOrderId" yerine hashmapdeki "orderId" "replaceOfferItemId" yerine "offerItemIdfourth_bagaj" "replacePassengerRefs" yerine "passengerRef" ve "replacePassengerId" yerine "passengerId1" "replaceSegmentId" yerine "segmentRef4" "replaceServiceDefId" yerine "offerItemIdfourth_bagaj" degerlerini ekle
